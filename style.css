@@ -1,0 +1,948 @@
+/* Typography
+------------------------------------------------------------------------------ */
+@import url("./fonts.css");
+/* Document
+------------------------------------------------------------------------------ */
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  font-family: "Montserrat-Light";
+  background: transparent;
+  vertical-align: top;
+}
+*:focus {
+  outline: 0;
+}
+html {
+  height: 100%;
+  background: #3b3d40;
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  min-height: 100%;
+  font-size: 10px;
+  line-height: 15px;
+  vertical-align: top;
+  color: #131418;
+}
+body *-webkit-scrollbar {
+  width: 7.5px;
+}
+body *-webkit-scrollbar-track {
+  background: #464646;
+}
+body *-webkit-scrollbar-thumb {
+  background: #464646;
+  border-radius: 10px;
+}
+stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+}
+title {
+  display: inline-block;
+  font-size: 50px;
+  font-family: "Montserrat-Bold";
+  line-height: 55px;
+  letter-spacing: 0.75px;
+  color: #fff;
+}
+subtitle {
+  display: inline-block;
+  color: #fff;
+  font-family: "Montserrat-Bold";
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+description {
+  display: inline-block;
+  font-family: "pt-serif";
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(255,255,255,0.7);
+}
+summary {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "pt-serif";
+  color: rgba(255,255,255,0.5);
+}
+button {
+  display: block;
+  padding: 15px 40px;
+  color: #fff;
+  font-family: "Montserrat-Bold";
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #000;
+  border-radius: 40px;
+}
+main {
+  display: block;
+  width: 100%;
+}
+main > * {
+  display: block;
+  width: 1040px;
+  margin: 0 auto;
+  padding: 80px;
+}
+main menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0;
+}
+/* Menu
+------------------------------------------------------------------------------ */
+main menu {
+  color: #f0f0f0;
+  text-align: center;
+  z-index: 100;
+}
+main menu logo {
+  display: inline-block;
+  float: left;
+  margin-right: 100px;
+  font-size: 24px;
+  font-family: "BurlingamePro-Bold";
+  line-height: 24px;
+}
+main menu nav {
+  display: inline-block;
+  float: right;
+  margin: -12px 5px;
+  padding: 10px 10px;
+  font-size: 25px;
+  line-height: 12px;
+  font-weight: normal;
+  font-family: "Montserrat-Light";
+  cursor: pointer;
+}
+/* Footer
+------------------------------------------------------------------------------ */
+footer {
+  display: block;
+  height: 500px;
+  width: 100%;
+  background: #000;
+}
+/* Start
+------------------------------------------------------------------------------ */
+main start {
+  height: 640px;
+  color: #fff;
+}
+main start > * {
+  display: block;
+}
+main start icon {
+  margin: 200px auto 0;
+  width: 65px;
+  height: 65px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50px;
+}
+main start title {
+  margin: 30px auto 0;
+  width: 480px;
+  text-align: center;
+}
+main start description {
+  margin: 15px auto 0;
+  text-align: center;
+}
+main start scroll {
+  margin: 150px auto 0;
+  text-align: center;
+  font-size: 40px;
+  color: rgba(255,255,255,0.5);
+}
+/* AUI Diagram
+------------------------------------------------------------------------------ */
+main aui-diagram {
+  text-align: center;
+}
+main aui-diagram title {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+main aui-diagram description {
+  display: block;
+  width: 55%;
+  margin: 15px auto 80px;
+}
+main aui-diagram diagram {
+  display: inline-block;
+  width: 470px;
+  height: 830px;
+  background: rgba(255,255,255,0.2);
+}
+main aui-diagram #left-blocks {
+  display: inline-block;
+  margin: 80px 0 0;
+  float: left;
+}
+main aui-diagram #right-blocks {
+  display: inline-block;
+  margin: 80px 0 0;
+  float: right;
+}
+main aui-diagram block {
+  display: block;
+  width: 200px;
+  height: 250px;
+}
+main aui-diagram block summary {
+  display: block;
+  margin-top: 10px;
+}
+/* Supporters
+------------------------------------------------------------------------------ */
+main supporters {
+  height: 120px;
+  padding: 80px 40px;
+  text-align: justify;
+}
+main supporters subtitle {
+  display: block;
+  text-align: center;
+}
+main supporters company {
+  display: inline-block;
+  height: 60px;
+  margin: 40px 0 0;
+  text-align: center;
+}
+main supporters company svg {
+  display: inline-block;
+  height: 60px;
+  width: 150px;
+  fill: rgba(255,255,255,0.3);
+}
+main supporters company#intel svg {
+  width: 92px;
+}
+main supporters company#uber svg {
+  width: 120px;
+}
+main supporters company#hulu svg {
+  width: 100px;
+}
+/* Provider Benefits
+   Now vs New
+   Conceptual Design > Human Abstraction
+   Membership > Nonprofit Model
+------------------------------------------------------------------------------ */
+now-vs-new,
+member-benefits,
+human-abstraction,
+nonprofit-model {
+  height: 540px;
+}
+now-vs-new diagram,
+member-benefits diagram,
+human-abstraction diagram,
+nonprofit-model diagram {
+  display: inline-block;
+  float: left;
+  width: 440px;
+  height: 640px;
+  margin-top: -20px;
+  background: rgba(255,255,255,0.2);
+}
+now-vs-new title,
+member-benefits title,
+human-abstraction title,
+nonprofit-model title {
+  width: 520px;
+  margin-top: 60px;
+  float: right;
+}
+now-vs-new description,
+member-benefits description,
+human-abstraction description,
+nonprofit-model description {
+  width: 520px;
+  margin-top: 20px;
+  float: right;
+}
+now-vs-new block,
+member-benefits block,
+human-abstraction block,
+nonprofit-model block {
+  width: 230px;
+  margin: 40px 0 0 60px;
+  float: right;
+}
+now-vs-new block subtitle,
+member-benefits block subtitle,
+human-abstraction block subtitle,
+nonprofit-model block subtitle {
+  display: block;
+  margin-bottom: 10px;
+}
+now-vs-new block summary,
+member-benefits block summary,
+human-abstraction block summary,
+nonprofit-model block summary {
+  display: block;
+}
+now-vs-new button,
+member-benefits button,
+human-abstraction button,
+nonprofit-model button {
+  width: 233px;
+  float: right;
+  margin: 50px 140px 10px;
+}
+now-vs-new.left diagram,
+member-benefits.left diagram,
+human-abstraction.left diagram,
+nonprofit-model.left diagram {
+  float: right;
+}
+now-vs-new.left title,
+member-benefits.left title,
+human-abstraction.left title,
+nonprofit-model.left title,
+now-vs-new.left description,
+member-benefits.left description,
+human-abstraction.left description,
+nonprofit-model.left description,
+now-vs-new.left block,
+member-benefits.left block,
+human-abstraction.left block,
+nonprofit-model.left block {
+  float: left;
+}
+now-vs-new.left block,
+member-benefits.left block,
+human-abstraction.left block,
+nonprofit-model.left block {
+  margin: 40px 60px 0 0;
+}
+member-benefits title {
+  margin-top: 30px;
+}
+/* Core Design Principles
+------------------------------------------------------------------------------ */
+main > core-design-principles {
+  height: 610px;
+  text-align: justify;
+}
+main > core-design-principles title {
+  display: block;
+  margin: 30px auto 0;
+  text-align: center;
+}
+main > core-design-principles description {
+  display: block;
+  width: 440px;
+  margin: 20px auto 80px;
+  text-align: center;
+}
+main > core-design-principles principle {
+  display: inline-block;
+  width: 250px;
+  height: 230px;
+}
+main > core-design-principles principle diagram {
+  display: block;
+  margin: 0 auto;
+  width: 65px;
+  height: 65px;
+  background: rgba(255,255,255,0.2);
+}
+main > core-design-principles principle subtitle {
+  width: 250px;
+  margin: 20px 0 10px;
+  text-align: center;
+}
+main > core-design-principles principle summary {
+  display: block;
+  text-align: center;
+}
+main > core-design-principles button {
+  width: 269px;
+  margin: 60px auto 0;
+}
+/* Technical Menu
+------------------------------------------------------------------------------ */
+technical-menu {
+  display: inline-block;
+  float: left;
+  margin-top: 30px;
+}
+technical-menu nav {
+  display: block;
+  padding: 5px 0;
+  color: rgba(255,255,255,0.5);
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+technical-menu nav::before {
+  content: "●";
+  margin-right: 20px;
+}
+technical-menu nav:hover {
+  color: rgba(255,255,255,0.7);
+}
+/* Conceptual Design
+   Processing
+   Information
+   Interfaces
+------------------------------------------------------------------------------ */
+conceptual-design,
+processing,
+information,
+interfaces {
+  height: 843px;
+}
+conceptual-design title,
+processing title,
+information title,
+interfaces title {
+  float: left;
+  margin: 30px 0 0 150px;
+}
+conceptual-design description,
+processing description,
+information description,
+interfaces description {
+  width: 580px;
+  float: left;
+  margin: 20px 0 0 150px;
+}
+conceptual-design diagram,
+processing diagram,
+information diagram,
+interfaces diagram {
+  display: inline-block;
+  float: left;
+  width: 400px;
+  height: 650px;
+  margin: 60px 50px 0 300px;
+  background: rgba(255,255,255,0.2);
+}
+conceptual-design block,
+processing block,
+information block,
+interfaces block {
+  display: inline-block;
+  float: left;
+  width: 240px;
+  margin: 180px 0 -80px;
+}
+conceptual-design block icon,
+processing block icon,
+information block icon,
+interfaces block icon {
+  display: inline-block;
+  float: left;
+  width: 32px;
+  height: 32px;
+  background: rgba(255,255,255,0.2);
+}
+conceptual-design block subtitle,
+processing block subtitle,
+information block subtitle,
+interfaces block subtitle {
+  float: left;
+  margin-left: 20px;
+}
+conceptual-design block summary,
+processing block summary,
+information block summary,
+interfaces block summary {
+  width: 180px;
+  margin: 10px 0 0 20px;
+  float: left;
+}
+conceptual-design #conceptual-design {
+  color: #fff;
+}
+conceptual-design block {
+  margin: 150px 0 -80px;
+}
+/* Conceptual Design > Particle Flows
+   Conceptual Design > Active Particles
+   Conceptual Design > Data Particles
+   Conceptual Design > Arcs
+   Processing > Superoptimization
+   Processing > Infrastructure
+   Processing > Resilience
+   information > Ontology
+   information > Structures
+   Information > Resilience
+   Interfaces > Visual Development
+   Interfaces > Build Apps
+   Interfaces > Interconnection
+------------------------------------------------------------------------------ */
+flows,
+active-particles,
+data-particles,
+people-things-particles,
+arcs,
+superoptimization,
+infrastructure,
+processing-resilience,
+ontology,
+structures,
+data-resilience,
+visual-development,
+build-apps,
+interconnection {
+  height: 540px;
+}
+flows diagram,
+active-particles diagram,
+data-particles diagram,
+people-things-particles diagram,
+arcs diagram,
+superoptimization diagram,
+infrastructure diagram,
+processing-resilience diagram,
+ontology diagram,
+structures diagram,
+data-resilience diagram,
+visual-development diagram,
+build-apps diagram,
+interconnection diagram {
+  display: inline-block;
+  float: right;
+  width: 480px;
+  height: 480px;
+  margin: 30px 0 0 0;
+  background: rgba(255,255,255,0.2);
+}
+flows title,
+active-particles title,
+data-particles title,
+people-things-particles title,
+arcs title,
+superoptimization title,
+infrastructure title,
+processing-resilience title,
+ontology title,
+structures title,
+data-resilience title,
+visual-development title,
+build-apps title,
+interconnection title {
+  float: left;
+  width: 480px;
+  margin-top: 20px;
+}
+flows description,
+active-particles description,
+data-particles description,
+people-things-particles description,
+arcs description,
+superoptimization description,
+infrastructure description,
+processing-resilience description,
+ontology description,
+structures description,
+data-resilience description,
+visual-development description,
+build-apps description,
+interconnection description {
+  width: 480px;
+  float: left;
+  margin: 20px 0 40px;
+}
+flows block,
+active-particles block,
+data-particles block,
+people-things-particles block,
+arcs block,
+superoptimization block,
+infrastructure block,
+processing-resilience block,
+ontology block,
+structures block,
+data-resilience block,
+visual-development block,
+build-apps block,
+interconnection block {
+  display: inline-block;
+  width: 180px;
+  height: 120px;
+  margin: 0 60px 40px 0;
+  float: left;
+}
+flows block icon,
+active-particles block icon,
+data-particles block icon,
+people-things-particles block icon,
+arcs block icon,
+superoptimization block icon,
+infrastructure block icon,
+processing-resilience block icon,
+ontology block icon,
+structures block icon,
+data-resilience block icon,
+visual-development block icon,
+build-apps block icon,
+interconnection block icon {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 10px;
+  background: rgba(255,255,255,0.2);
+}
+flows block subtitle,
+active-particles block subtitle,
+data-particles block subtitle,
+people-things-particles block subtitle,
+arcs block subtitle,
+superoptimization block subtitle,
+infrastructure block subtitle,
+processing-resilience block subtitle,
+ontology block subtitle,
+structures block subtitle,
+data-resilience block subtitle,
+visual-development block subtitle,
+build-apps block subtitle,
+interconnection block subtitle {
+  display: block;
+  width: 180px;
+}
+flows block summary,
+active-particles block summary,
+data-particles block summary,
+people-things-particles block summary,
+arcs block summary,
+superoptimization block summary,
+infrastructure block summary,
+processing-resilience block summary,
+ontology block summary,
+structures block summary,
+data-resilience block summary,
+visual-development block summary,
+build-apps block summary,
+interconnection block summary {
+  display: inline-block;
+  width: 180px;
+  margin-top: 10px;
+  float: left;
+}
+flows.left diagram,
+active-particles.left diagram,
+data-particles.left diagram,
+people-things-particles.left diagram,
+arcs.left diagram,
+superoptimization.left diagram,
+infrastructure.left diagram,
+processing-resilience.left diagram,
+ontology.left diagram,
+structures.left diagram,
+data-resilience.left diagram,
+visual-development.left diagram,
+build-apps.left diagram,
+interconnection.left diagram {
+  float: left;
+}
+flows.left title,
+active-particles.left title,
+data-particles.left title,
+people-things-particles.left title,
+arcs.left title,
+superoptimization.left title,
+infrastructure.left title,
+processing-resilience.left title,
+ontology.left title,
+structures.left title,
+data-resilience.left title,
+visual-development.left title,
+build-apps.left title,
+interconnection.left title {
+  float: right;
+}
+flows.left description,
+active-particles.left description,
+data-particles.left description,
+people-things-particles.left description,
+arcs.left description,
+superoptimization.left description,
+infrastructure.left description,
+processing-resilience.left description,
+ontology.left description,
+structures.left description,
+data-resilience.left description,
+visual-development.left description,
+build-apps.left description,
+interconnection.left description {
+  float: right;
+}
+flows.left block,
+active-particles.left block,
+data-particles.left block,
+people-things-particles.left block,
+arcs.left block,
+superoptimization.left block,
+infrastructure.left block,
+processing-resilience.left block,
+ontology.left block,
+structures.left block,
+data-resilience.left block,
+visual-development.left block,
+build-apps.left block,
+interconnection.left block {
+  float: right;
+}
+/* Processing
+------------------------------------------------------------------------------ */
+processing #processing {
+  color: #fff;
+}
+processing block {
+  margin-top: 150px;
+}
+/* information
+------------------------------------------------------------------------------ */
+information #information {
+  color: #fff;
+}
+information block {
+  margin-top: 150px;
+}
+/* Ontology
+------------------------------------------------------------------------------ */
+ontology title {
+  width: 500px;
+}
+/* Interfaces
+------------------------------------------------------------------------------ */
+interfaces #interfaces {
+  color: #fff;
+}
+interfaces diagram {
+  width: 780px;
+  margin-left: -80px;
+}
+/* Interfaces > Visual Development
+------------------------------------------------------------------------------ */
+visual-development diagram {
+  width: 560px;
+  margin-right: -80px;
+}
+/* Infrastructure
+------------------------------------------------------------------------------ */
+infrastructure #infrastructure {
+  color: #fff;
+}
+/* Membership
+------------------------------------------------------------------------------ */
+membership {
+  height: 1120px;
+  text-align: justify;
+}
+membership title {
+  display: block;
+  margin-top: 110px;
+  text-align: center;
+}
+membership description {
+  display: block;
+  margin: 20px auto 100px;
+  padding: 0 200px;
+  text-align: center;
+}
+membership plan {
+  display: inline-block;
+  width: 150px;
+  margin: 0 30px 110px;
+}
+membership plan diagram {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 150px;
+}
+membership plan subtitle,
+membership plan summary {
+  display: block;
+  text-align: center;
+}
+membership plan summary {
+  margin-top: 5px;
+}
+membership plan summary rate {
+  font-size: 11px;
+  line-height: 19px;
+  font-family: "pt-serif";
+}
+membership advantage {
+  display: inline-block;
+  width: 450px;
+  margin: 0 0 40px 30px;
+}
+membership advantage icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 25px;
+  float: left;
+  background: rgba(255,255,255,0.2);
+}
+membership advantage subtitle {
+  display: inline-block;
+  float: left;
+  margin: -3px 0 10px;
+}
+membership advantage summary {
+  display: inline-block;
+  width: 360px;
+  float: left;
+}
+/* Progress
+------------------------------------------------------------------------------ */
+project-progress {
+  height: 760px;
+  text-align: justify;
+}
+project-progress title {
+  display: block;
+  margin-top: 110px;
+  text-align: center;
+}
+project-progress description {
+  display: block;
+  margin: 20px auto 100px;
+  padding: 0 200px;
+  text-align: center;
+}
+project-progress milestone {
+  display: inline-block;
+  width: 250px;
+  margin: 0 30px 110px;
+}
+project-progress milestone diagram {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 150px;
+}
+project-progress milestone subtitle,
+project-progress milestone summary {
+  display: block;
+  text-align: center;
+}
+project-progress milestone summary {
+  margin-top: 5px;
+}
+project-progress milestone summary rate {
+  font-size: 11px;
+  line-height: 19px;
+  font-family: "pt-serif";
+}
+project-progress advantage {
+  display: inline-block;
+  width: 450px;
+  margin: 0 0 40px 30px;
+}
+project-progress advantage icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 25px;
+  float: left;
+  background: rgba(255,255,255,0.2);
+}
+project-progress advantage subtitle {
+  display: inline-block;
+  float: left;
+  margin: -3px 0 10px;
+}
+project-progress advantage summary {
+  display: inline-block;
+  width: 360px;
+  float: left;
+}
+/* The Team
+------------------------------------------------------------------------------ */
+the-team {
+  height: 1390px;
+}
+the-team title {
+  display: block;
+  width: 600px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+the-team description {
+  display: block;
+  margin: 20px auto 110px;
+  padding: 0 200px;
+  text-align: center;
+}
+the-team biography {
+  display: block;
+  width: 800px;
+  height: 200px;
+  margin: 0 auto 80px;
+}
+the-team biography photo {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin-right: 80px;
+  float: left;
+  background: rgba(255,255,255,0.2);
+  border-radius: 300px;
+}
+the-team biography name,
+the-team biography subtitle,
+the-team biography description {
+  width: 500px;
+}
+the-team biography name {
+  display: inline-block;
+  margin: 5px 0;
+  font-size: 32px;
+  font-family: "Montserrat-Bold";
+  line-height: 38px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+the-team biography subtitle {
+  color: rgba(255,255,255,0.7);
+}
+the-team biography description {
+  font-size: 16px;
+  line-height: 23px;
+  text-align: left;
+}
+the-team biography#sachin photo {
+  background: url("./images/sachin.jpg");
+}
+the-team biography#andrew photo {
+  background: url("./images/andrew.jpg");
+}
+the-team biography#melani photo {
+  background: url("./images/melani.jpg");
+}

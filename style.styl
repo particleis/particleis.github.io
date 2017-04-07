@@ -1,0 +1,770 @@
+/* Typography
+------------------------------------------------------------------------------ */
+@import url(./fonts.css);
+
+/* Document
+------------------------------------------------------------------------------ */
+*
+  position relative
+  margin 0
+  padding 0
+  border 0
+  font-size 100%
+  font-weight normal
+  font-family "Montserrat-Light"
+  background transparent
+  vertical-align top
+  
+  &:focus
+    outline: 0
+    
+html
+  height 100%
+  background rgb(59, 61, 64)
+  font-size (10/16)*100%
+  -webkit-font-smoothing antialiased
+  
+body
+  min-height 100%
+  font-size 10px
+  line-height 15px
+  vertical-align top
+  color rgb(19, 20, 24)
+  
+  *-webkit-scrollbar
+    width 7.5px
+
+  *-webkit-scrollbar-track
+    background rgb(70, 70, 70)
+    
+  *-webkit-scrollbar-thumb
+    background rgb(70, 70, 70)
+    border-radius 10px
+
+stretch
+  width 100%
+  display inline-block
+  font-size 0
+  line-height 0
+
+title
+  display inline-block
+  font-size 50px
+  font-family "Montserrat-Bold"
+  line-height 55px
+  letter-spacing 0.75px
+  color white
+  
+subtitle
+  display inline-block
+  color white
+  font-family "Montserrat-Bold"
+  font-size 11px
+  letter-spacing 0.5px
+  text-transform uppercase
+
+description
+  display inline-block
+  font-family "pt-serif"
+  font-size 18px
+  line-height 27px
+  color rgba(255, 255, 255, 0.7)
+  
+summary
+  display inline-block
+  font-size 14px
+  line-height 18px
+  font-family "pt-serif"
+  color rgba(255, 255, 255, 0.5)
+
+button
+  display block
+  padding 15px 40px
+  color white
+  font-family "Montserrat-Bold"
+  font-size 11px
+  letter-spacing 0.5px
+  text-align center
+  text-transform uppercase
+  background black
+  border-radius 40px
+  
+main
+  display block
+  width 100%
+  
+  & > *
+    display block
+    width 1040px
+    margin 0 auto
+    padding 80px
+    
+  menu
+    position: absolute
+    left 0
+    right 0
+    margin-left auto
+    margin-right auto
+    padding 50px 0
+    
+/* Menu
+------------------------------------------------------------------------------ */
+main menu
+  color rgb(240, 240, 240)
+  text-align center
+  z-index 100
+  
+  logo
+    display inline-block
+    float left
+    margin-right 100px
+    font-size 24px
+    font-family "BurlingamePro-Bold"
+    line-height 24px
+    
+  nav
+    display inline-block
+    float right
+    margin -12px 5px
+    padding 10px 10px
+    font-size 25px
+    line-height 12px
+    font-weight normal
+    font-family "Montserrat-Light"
+    cursor pointer
+      
+
+/* Footer
+------------------------------------------------------------------------------ */
+footer
+  display block
+  height 500px
+  width 100%
+  background black
+  
+
+/* Start
+------------------------------------------------------------------------------ */
+main start
+  height 640px
+  color white
+  
+  & > *
+    display block
+  
+  icon
+    margin 200px auto 0
+    width 65px
+    height 65px
+    background rgba(255, 255, 255, 0.2)
+    border-radius 50px
+    
+  title
+    margin 30px auto 0
+    width 480px
+    text-align center
+    
+  description
+    margin 15px auto 0
+    text-align center
+    
+  scroll
+    margin 150px auto 0
+    text-align center
+    font-size 40px
+    color rgba(255, 255, 255, 0.5)
+    
+/* AUI Diagram
+------------------------------------------------------------------------------ */
+main aui-diagram
+  text-align center
+  
+  title
+    display block
+    width 50%
+    margin 0 auto
+    text-align center
+    
+  description
+    display block
+    width 55%
+    margin 15px auto 80px
+    
+  diagram
+    display inline-block
+    width 470px
+    height 830px
+    background rgba(255, 255, 255, 0.2)
+  
+  #left-blocks
+    display inline-block
+    margin 80px 0 0
+    float left
+    
+  #right-blocks
+    display inline-block
+    margin 80px 0 0
+    float right
+    
+  block
+    display block
+    width 200px
+    height 250px
+      
+    summary
+      display block
+      margin-top 10px
+      
+
+/* Supporters
+------------------------------------------------------------------------------ */
+main supporters
+  height 120px
+  padding 80px 40px
+  text-align justify
+  
+  subtitle
+    display block
+    text-align center
+    
+  company
+    display inline-block
+    height 60px
+    margin 40px 0 0
+    text-align center
+    
+    svg
+      display inline-block
+      height 60px
+      width 150px
+      fill rgba(255, 255, 255, 0.3)
+      
+    &#intel svg
+      width 92px
+      
+    &#uber svg
+      width 120px
+      
+    &#hulu svg
+      width 100px
+    
+
+/* Provider Benefits
+   Now vs New
+   Conceptual Design > Human Abstraction
+   Membership > Nonprofit Model
+------------------------------------------------------------------------------ */
+now-vs-new
+member-benefits
+human-abstraction
+nonprofit-model
+  height 540px
+  
+  diagram
+    display inline-block
+    float left
+    width 440px
+    height 640px
+    margin-top -20px
+    background rgba(255, 255, 255, 0.2)
+    
+  title
+    width 520px
+    margin-top 60px
+    float right
+    
+  description
+    width 520px
+    margin-top 20px
+    float right
+    
+  block
+    width 230px
+    margin 40px 0 0 60px
+    float right
+    
+    subtitle
+      display block
+      margin-bottom 10px
+      
+    summary
+      display block
+      
+  button
+    width 233px
+    float right
+    margin 50px 140px 10px
+  
+  &.left
+    diagram
+      float right
+      
+    title
+    description
+    block
+      float left
+      
+    block
+      margin 40px 60px 0 0
+
+member-benefits title
+  margin-top 30px
+  
+/* Core Design Principles
+------------------------------------------------------------------------------ */
+main > core-design-principles
+  height 610px
+  text-align justify
+  
+  title
+    display block
+    margin 30px auto 0
+    text-align center
+    
+  description
+    display block
+    width 440px
+    margin 20px auto 80px
+    text-align center
+    
+  principle
+    display inline-block
+    width 250px
+    height 230px
+    
+    diagram
+      display block
+      margin 0 auto
+      width 65px
+      height 65px
+      background rgba(255, 255, 255, 0.2)
+      
+    subtitle
+      width 250px
+      margin 20px 0 10px
+      text-align center
+      
+    summary
+      display block
+      text-align center    
+  
+  button
+    width 269px
+    margin 60px auto 0
+    
+
+/* Technical Menu
+------------------------------------------------------------------------------ */
+technical-menu
+  display inline-block
+  float left
+  margin-top 30px
+  
+  nav
+    display block
+    padding 5px 0
+    color rgba(255, 255, 255, 0.5)
+    font-family "Montserrat"
+    font-size 12px
+    line-height 16px
+    letter-spacing 0.5px
+    cursor pointer
+    
+    &::before
+      content "●"
+      margin-right 20px
+    
+    &:hover
+      color rgba(255, 255, 255, 0.7)
+
+/* Conceptual Design
+   Processing
+   Information
+   Interfaces
+------------------------------------------------------------------------------ */
+conceptual-design
+processing
+information
+interfaces
+  height 843px
+    
+  title
+    float left
+    margin 30px 0 0 150px
+    
+  description
+    width 580px
+    float left
+    margin 20px 0 0 150px
+  
+  diagram
+    display inline-block
+    float left
+    width 400px
+    height 650px
+    margin 60px 50px 0 300px
+    background rgba(255, 255, 255, 0.2)
+  
+  block
+    display inline-block
+    float left
+    width 240px
+    margin 180px 0 -80px
+    
+    icon
+      display inline-block
+      float left
+      width 32px
+      height 32px
+      background rgba(255, 255, 255, 0.2)
+      
+    subtitle
+      float left
+      margin-left 20px
+      
+    summary
+      width 180px
+      margin 10px 0 0 20px
+      float left
+      
+conceptual-design
+  #conceptual-design
+    color rgba(255, 255, 255, 1)
+    
+  block
+    margin 150px 0 -80px
+    
+
+/* Conceptual Design > Particle Flows
+   Conceptual Design > Active Particles
+   Conceptual Design > Data Particles
+   Conceptual Design > Arcs
+   Processing > Superoptimization
+   Processing > Infrastructure
+   Processing > Resilience
+   information > Ontology
+   information > Structures
+   Information > Resilience
+   Interfaces > Visual Development
+   Interfaces > Build Apps
+   Interfaces > Interconnection
+------------------------------------------------------------------------------ */
+flows
+active-particles
+data-particles
+people-things-particles
+arcs
+superoptimization
+infrastructure
+processing-resilience
+ontology
+structures
+data-resilience
+visual-development
+build-apps
+interconnection
+  height 540px
+  
+  diagram
+    display inline-block
+    float right
+    width 480px
+    height 480px
+    margin 30px 0 0 0
+    background rgba(255, 255, 255, 0.2)
+  
+  title
+    float left
+    width 480px
+    margin-top 20px
+
+  description
+    width 480px
+    float left
+    margin 20px 0 40px
+    
+  block
+    display inline-block
+    width 180px
+    height 120px
+    margin 0 60px 40px 0
+    float left
+    
+    icon
+      display block
+      width 25px
+      height 25px
+      margin-bottom 10px
+      background rgba(255, 255, 255, 0.2)
+      
+    subtitle
+      display block
+      width 180px
+      
+    summary
+      display inline-block
+      width 180px
+      margin-top 10px
+      float left
+
+      
+  &.left
+    diagram
+      float left
+      
+    title
+      float right
+      
+    description
+      float right
+      
+    block
+      float right
+
+
+/* Processing
+------------------------------------------------------------------------------ */
+processing
+  #processing
+    color rgba(255, 255, 255, 1)
+    
+  block
+    margin-top 150px
+    
+/* information
+------------------------------------------------------------------------------ */
+information
+  #information
+    color rgba(255, 255, 255, 1)
+    
+  block
+    margin-top 150px
+    
+/* Ontology
+------------------------------------------------------------------------------ */
+ontology
+  title
+    width 500px
+
+/* Interfaces
+------------------------------------------------------------------------------ */
+interfaces
+  #interfaces
+    color rgba(255, 255, 255, 1)
+    
+  diagram
+    width 780px
+    margin-left -80px
+    
+/* Interfaces > Visual Development
+------------------------------------------------------------------------------ */
+visual-development
+  diagram
+    width 560px
+    margin-right -80px
+    
+/* Infrastructure
+------------------------------------------------------------------------------ */
+infrastructure
+  #infrastructure
+    color rgba(255, 255, 255, 1)
+    
+/* Membership
+------------------------------------------------------------------------------ */
+membership
+  height 1120px
+  text-align justify
+  
+  title
+    display block
+    margin-top 110px
+    text-align center
+    
+  description
+    display block
+    margin 20px auto 100px
+    padding 0 200px
+    text-align center
+    
+  plan
+    display inline-block
+    width 150px
+    margin 0 30px 110px
+    
+    diagram
+      display block
+      width 150px
+      height 150px
+      margin-bottom 20px
+      background rgba(255, 255, 255, 0.2)
+      border-radius 150px
+      
+    subtitle
+    summary
+      display block
+      text-align center
+      
+    summary
+      margin-top 5px
+      
+      rate
+        font-size 11px
+        line-height 19px
+        font-family "pt-serif"
+  
+  advantage
+    display inline-block
+    width 450px
+    margin 0 0 40px 30px
+    
+    icon
+      display inline-block
+      width 32px
+      height 32px
+      margin-right 25px
+      float left
+      background rgba(255, 255, 255, 0.2)
+      
+    subtitle
+      display inline-block
+      float left
+      margin -3px 0 10px
+      
+    summary
+      display inline-block
+      width 360px
+      float left
+      
+
+/* Progress
+------------------------------------------------------------------------------ */
+project-progress
+  height 760px
+  text-align justify
+  
+  title
+    display block
+    margin-top 110px
+    text-align center
+    
+  description
+    display block
+    margin 20px auto 100px
+    padding 0 200px
+    text-align center
+    
+  milestone
+    display inline-block
+    width 250px
+    margin 0 30px 110px
+    
+    diagram
+      display block
+      width 150px
+      height 150px
+      margin 0 auto 30px
+      background rgba(255, 255, 255, 0.2)
+      border-radius 150px
+      
+    subtitle
+    summary
+      display block
+      text-align center
+    
+
+    summary
+      margin-top 5px
+      
+      rate
+        font-size 11px
+        line-height 19px
+        font-family "pt-serif"
+  
+  advantage
+    display inline-block
+    width 450px
+    margin 0 0 40px 30px
+    
+    icon
+      display inline-block
+      width 32px
+      height 32px
+      margin-right 25px
+      float left
+      background rgba(255, 255, 255, 0.2)
+      
+    subtitle
+      display inline-block
+      float left
+      margin -3px 0 10px
+      
+    summary
+      display inline-block
+      width 360px
+      float left
+    
+/* The Team
+------------------------------------------------------------------------------ */
+the-team
+  height 1390px
+  
+  title
+    display block
+    width 600px
+    margin 30px auto 0
+    text-align center
+    
+  description
+    display block
+    margin 20px auto 110px
+    padding 0 200px
+    text-align center
+    
+  biography
+    display block
+    width 800px
+    height 200px
+    margin 0 auto 80px
+    
+    photo
+      display inline-block
+      width 200px
+      height 200px
+      margin-right 80px
+      float left
+      background rgba(255, 255, 255, 0.2)
+      border-radius 300px
+    
+    name
+    subtitle
+    description
+      width 500px
+      
+    name
+      display inline-block
+      margin 5px 0
+      font-size 32px
+      font-family "Montserrat-Bold"
+      line-height 38px
+      letter-spacing 0.5px
+      color white
+      
+    subtitle
+      color rgba(255, 255, 255, 0.7)
+      
+    description
+      font-size 16px
+      line-height 23px
+      text-align left
+      
+    &#sachin
+      photo
+        background url('./images/sachin.jpg')
+        
+    &#andrew
+      photo
+        background url('./images/andrew.jpg')
+        
+    &#melani
+      photo
+        background url('./images/melani.jpg')
